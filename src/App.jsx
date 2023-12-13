@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import DotGroup from './scenes/DotGroup'
+import DotGroup from "./scenes/DotGroup";
+import Landing from "./scenes/Landing";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 
@@ -25,9 +26,13 @@ function App() {
         isTopOfPage={isTopOfPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-      {isAboveMediumScreens && (
-          <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+        {isAboveMediumScreens && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
         )}
+        <Landing setSelectedPage={setSelectedPage} />
       </div>
     </div>
   );
