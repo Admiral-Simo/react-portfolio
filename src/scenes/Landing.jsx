@@ -17,15 +17,15 @@ const Landing = ({ setSelectedPage }) => {
           <div className="relative before:absolute z-0 ml-20 before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="/assets/profile-image.png"
+              className="hover:filter h-[600px] rounded-t-[400px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[600px]"
+              src="/assets/landing.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="/assets/profile-image.png"
+            className="hover:filter h-96 rounded-t-[400px] hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[600px]"
+            src="/assets/landing.png"
           />
         )}
       </div>
@@ -42,7 +42,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl font-playfair z-10 text-center md:text-start md:text-5xl lg:text-6xl">
             Mohamed {""}
             <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
               Khalis
@@ -73,7 +73,7 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm border-l-2 ml-3 bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
